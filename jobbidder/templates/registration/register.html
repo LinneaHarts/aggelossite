@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<h1>Sign up for Job Bidder</h1>
+    <br>
+    {% if message %}
+    {{ message }}
+    {% else %}
+    <form method="POST">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <input type="submit" value="Register" />
+    </form>
+    {% endif %}
+    If you already have an account <a href="/jobbidder/accounts/login" target="blank"><strong>login</strong></a> instead.
+
+{% endblock %}

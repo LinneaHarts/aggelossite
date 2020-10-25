@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a37d9abb-63f4-411b-ac2b-68fa7337ccf7" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1eS8mErxibX0jccZRzpC77VCWZs" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/jobbidder/templates/jobbidder" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\linne\mysite\jobbidder\templates\jobbidder" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\linne\mysite\jobbidder" />
+      <recent name="C:\Users\linne\mysite" />
+      <recent name="C:\Users\linne\mysite\mysite" />
+      <recent name="C:\Users\linne\mysite\templates" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a37d9abb-63f4-411b-ac2b-68fa7337ccf7" name="Default Changelist" comment="" />
+      <created>1594303791687</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1594303791687</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="381" y="136" key="FileChooserDialogImpl" timestamp="1595259209838">
+      <screen x="0" y="0" width="1200" height="760" />
+    </state>
+    <state x="381" y="136" key="FileChooserDialogImpl/0.0.1200.760/0.-1080.1920.1040@0.0.1200.760" timestamp="1595259209838" />
+    <state x="0" y="0" width="1214" height="846" key="dock-window-1" timestamp="1597679317158">
+      <screen x="0" y="0" width="1200" height="760" />
+    </state>
+    <state x="0" y="0" width="1214" height="846" key="dock-window-1/0.0.1200.760/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1597679317158" />
+    <state x="623" y="-855" width="672" height="678" key="search.everywhere.popup" timestamp="1597342237608">
+      <screen x="0" y="-1080" width="1920" height="1040" />
+    </state>
+    <state x="623" y="-855" width="672" height="678" key="search.everywhere.popup/0.0.1200.760/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1597342237608" />
+  </component>
+</project>

@@ -1,0 +1,45 @@
+Assume that the originating company and information is set up
+
+
+User types:
+1. Thenamaris user
+2. Outside company user
+
+1. A new bidding company wants to join
+	a. User from company comes to website
+	b. They try to creeate a new user account
+	d. ask for company's name, details, etc before they place a bid
+	c. If user account already exists --> Error --> Send user to forgot password page
+	d. Otherwise account created (Check if account is created correctly)
+
+
+2. Thenamaris wants companies to bid on a job, so a Thenamaris user needs to create a job
+	a. What data do they need to create a job
+		i. Description of job -- To and from location and dock, Volume and weight of material
+		ii. Maximum bid
+		iii. Date job must be completed by
+	b. Job must be in the future
+	d. What happens after they create the job
+
+
+3. A company wants to bid on a job
+	a. What data do they need to give?
+		i. System records company name
+		ii. How much they want to bid for
+	b. Check if bid is a number, otherwise error
+	c. Check if bid less, and only update if it is less
+	c. Automatically update the job's top bid
+
+4. Thenamaris wants to award a company a job
+	a. User picks a bid (might not be the lowest one)
+	b. Job should be marked as taken, stop receiving bids
+	c. Notification sent to winning bidder, losing bidders (nice to have)
+	d. If company winner logs in, they see they've won, loser sees they haven't
+
+5. Company notes when a job is done
+	a. User logins in to mark job done
+	b. Thenamaris user can see if jobs are done
+
+Nice to have:
+1. Notifications when bids are updated
+2. Specific fields for to and from location/dock, volume and weight of material

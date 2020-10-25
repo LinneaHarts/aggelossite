@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+ <h1>Welcome to Job Bidder!</h1>
+        <p class="lead">You can browse jobs to bid on, bid on jobs, check which jobs you've bid on, and which jobs
+        have been accepted</p>
+        <a class="btn btn-large btn-success" href="accounts/register/">Sign up today</a>
+{% if welcome_message %}
+<h2>{{ welcome_message }}</h2>
+{% endif %}
+
+{% endblock %}
