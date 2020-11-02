@@ -89,3 +89,11 @@ def addcompany(request):
         form = AddCompanyForm()
         context = {'form': form}
     return render(request, 'jobbidder/addcompany.html', context)
+
+
+def listjobs(request):
+    jobs_list = Job.objects.all()
+    context = {
+        'jobs_list': jobs_list,
+    }
+    return render(request, 'jobbidder/listjobs.html', context)

@@ -13,5 +13,6 @@ urlpatterns = [
     path('<int:company_id>/', views.detail, name='detail'),
     path('addjob', views.addjob, name='addjob'),
     path('addcompany', views.addcompany, name='addcompany'),
-    path('adduser', views.adduser, name='adduser')
+    path('adduser', views.adduser, name='adduser'),
+    path('listjobs', views.listjobs, name='listjobs')
 ]
