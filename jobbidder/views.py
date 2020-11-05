@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from django.http import HttpResponse, Http404, HttpResponseRedirect
 from django.forms import modelformset_factory
 from django.template import loader
@@ -6,7 +6,7 @@ from django.urls import reverse
 from django.views import generic
 from django.contrib.auth import authenticate, login
 from django.contrib.auth.forms import UserCreationForm
-from django.contrib.auth.decorators import login_required
+from django.contrib.auth.decorators import login_required, permission_required
 
 from .models import Company, Job
 
@@ -25,6 +25,7 @@ def index(request):
     company_list = Company.objects.all()
     context = {
         'companies': company_list,
+        'message' : request.GET.get('message'),
     }
     return render(request, 'jobbidder/index.html', context)
 
@@ -50,23 +51,12 @@ def register(request):
         context = {'form': form}
     return render(request, 'registration/register.html', context)
 
-def adduser(request):
-    UserFormSet = modelformset_factory(User, exclude=())
-    if request.method == 'POST':
-        formset = UserFormSet(request.POST, request.FILES)
-        if formset.is_valid():
-            formset.save()
-            context = {'message': 'User saved successfully'}
-        else:
-            context = {'message': 'Problem with job'}
-    else:
-        formset = UserFormSet()
-        context = {
-            'formset': formset
-        }
-    return render(request, 'jobbidder/adduser.html', context)
+def logout(request):
+    logout(request)
+    return redirect('jobbidder')
 
 @login_required(login_url='/jobbidder/accounts/login?next=/addjob')
+@permission_required('job.add_job', login_url='/jobbidder?message=permission_denied')
 def addjob(request):
     if request.method == 'POST':
         form = AddJobForm(request.POST)

@@ -66,10 +66,9 @@
         </div>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+    {% if request.user.is_authenticated %}
+        <span style="color:white;">Hello, {{request.user.username}}!</span> &nbsp;<a href="/jobbidder/accounts/logout/">Logout</a>
+    {% endif %}
   </div>
 </nav>
 

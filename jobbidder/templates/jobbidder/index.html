@@ -3,10 +3,17 @@
  <h1>Welcome to Job Bidder on Aggelos's Site!</h1>
         <p class="lead">You can browse jobs to bid on, bid on jobs, check which jobs you've bid on, and which jobs
         have been accepted</p>
+        {% if request.user.is_authenticated %}
+        <h2> Hello {{request.user.username}}</h2>
+        {% else %}
         <a class="btn btn-large btn-success" href="accounts/register/">Sign up today</a>
         <a class="btn btn-large btn-success" href="accounts/login/">Login Now</a>
+        {% endif %}
 {% if welcome_message %}
 <h2>{{ welcome_message }}</h2>
+{% endif %}
+{% if message %}
+<h2>{{ message }}</h2>
 {% endif %}
 
 {% endblock %}
